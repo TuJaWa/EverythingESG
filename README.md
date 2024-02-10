@@ -1,7 +1,7 @@
 # EverythingESG
 ESG Ratings Random Generator
 * Generates random data for a number of companies over a number of years
-* Each year will have an ESG rating of +- 1 from the year before (assumed)
+* Each year will change the factors by +- 1 from the year before (assumed)
 * Data is weighted for three pillars of ESG: Environment, Social, and Governance
 * The Ten factors are divided into the three pillars
  * The factors are carbon_emissions, resource_usage, labor_practices, diversity_inclusion, human_rights, community_relations, board_structure, executive_compensation, shareholder_rights, anti_corruption_policies, esg_risk_exposure, data_accuracy
@@ -31,4 +31,13 @@ ESG Ratings Random Generator
  * ```python3 ESG_ratings_simplified.py```
 
 
+## Areas for Improvement
+* Currently, only final scores are outputed. Could add factor series to output as well.
+* Changing the variability of factors on a year to year basis to be something other than one
+* Creating graphs of the scores
+* Edit checks to make sure that weights are 1) normalized or 2) sum to 1
+
+## New projects:
+* Generate these factors for a given company
+* Look at [GRI Standards](https://www.globalreporting.org/standards)
 
