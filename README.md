@@ -15,7 +15,20 @@ ESG Ratings Random Generator
 * On http://127.0.0.1:5000/, you will be presented with 5 form fields:
   * Number of Companies, Number of Years, Weight (Environmental), Weight (Social), Weight (Governance)
    * Number of companies means how many companies you are simulating
-   * Number of years is how 
+   * Number of years is how many years of data you want to generate
+   * The weights are relative weights to calculate the ESG score for each company. The weights should add to 1 and be positive. No error checks on this yet.
+* By pressing "Calculate", the page will show your companies titled "Company_[number]" followed by a list of sequential ESG ratings simulated for the number of years specified
+
+## How to run the application
+* Prerequisites:
+ * Must have python3 installed
+  * Tested with Python 3.11.7 on Mac
+ * ```pip install pandas```
+ * ```pip install flask```
+ * ```pip install numpy```
+ * Clone this repo
+ * Open root folder
+ * ```python3 ESG_ratings_simplified.py```
 
 
 
