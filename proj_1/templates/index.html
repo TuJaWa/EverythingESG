@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ESG Rating Simulator</title>
+</head>
+<body>
+    <h1>ESG Rating Simulator</h1>
+    <form action="/calculate" method="post">
+        <label for="num_companies">Number of Companies:</label>
+        <input type="number" name="num_companies" required>
+        <br>
+        <label for="num_years">Number of Years:</label>
+        <input type="number" name="num_years" min="1" max="100" required>
+        <br>
+        <label for="weight_environmental">Weight (Environmental):</label>
+        <input type="number" name="weight_environmental" step="0.1" required>
+        <br>
+        <label for="weight_social">Weight (Social):</label>
+        <input type="number" name="weight_social" step="0.1" required>
+        <br>
+        <label for="weight_governance">Weight (Governance):</label>
+        <input type="number" name="weight_governance" step="0.1" required>
+        <br>
+        <input type="submit" value="Calculate">
+    </form>
+</body>
+</html>

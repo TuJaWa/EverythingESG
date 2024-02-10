@@ -27,7 +27,7 @@ ESG Ratings Random Generator
  * ```pip install flask```
  * ```pip install numpy```
  * Clone this repo
- * Open root folder
+ * ```cd proj_1```
  * ```python3 ESG_ratings_simplified.py```
 
 

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ESG Results</title>
+</head>
+<body>
+    <h1>ESG Results</h1>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Company_Number</th>
+                <th>ESG_Score</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for index, row in esg_data.iterrows() %}
+                <tr>
+                    <td>{{ row['Company_Number'] }}</td>
+                    <td>{{ row['ESG_Score'] }}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html>

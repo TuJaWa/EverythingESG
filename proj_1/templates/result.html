@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ESG Rating Results</title>
+</head>
+<body>
+    <h1>ESG Rating Results</h1>
+    {% for company, ratings in esg_ratings.items() %}
+        <h2>{{ company }}</h2>
+        <ul>
+            {% for rating in ratings %}
+                <li>{{ rating|round(2) }}</li>
+            {% endfor %}
+        </ul>
+    {% endfor %}
+</body>
+</html>
