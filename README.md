@@ -41,3 +41,4 @@ ESG Ratings Random Generator
 * Generate these factors for a given company
 * Look at [GRI Standards](https://www.globalreporting.org/standards)
 
+
